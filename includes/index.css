@@ -20,7 +20,7 @@
   flex-direction: row;
   justify-content: center;
   width: 100vw;
-  height: 70vh;
+  height: 85vh;
 }
 
 .index-FirstSlide {
@@ -36,7 +36,7 @@
   align-items: center;
   color: white;
   width: 50vw;
-  height: 80vh;
+  height: 85vh;
   background-color: #202A5D;
   padding: 84px;
   overflow: scroll;
@@ -48,7 +48,7 @@
   align-items: center;
   color: white;
   width: 50vw;
-  height: 80vh;
+  height: 85vh;
   background-color: #B93838;
 
 }
@@ -62,7 +62,7 @@
   align-items: center;
   padding: 84px;
   width: 40vw;
-  height: 64vh;
+  height: 68vh;
   overflow: scroll;
 }
   

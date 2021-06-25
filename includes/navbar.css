@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiko&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap');
+
+.index-Navbar {
+    font-family: 'Amiko', sans-serif;
+    font-size: 18px;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 15vh;
+}
+
+.index-NavbarTop {
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+    width: 100vw;
+    margin-top: 12px;
+}
+
+.index-NavbarLogo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #B93838;
+    color: white;
+    width: 84px;
+    height: 84px;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.index-NavbarLinks {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    width: 100vw;
+    margin: 24px;
+}
+
+.index-NavbarSearch {
+    display: flex;
+    flex-direction:row-reverse;
+    align-content: flex-start;
+    width: 100vw;
+}
