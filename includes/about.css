@@ -6,7 +6,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
     /* https://medium.com/cloud-native-the-gathering/how-to-use-css-to-fade-in-and-fade-out-html-text-and-pictures-f45c11364f08 */
     animation: fadeIn ease 2s;
     -webkit-animation: fadeIn ease 2s;
@@ -15,10 +14,13 @@
     -ms-animation: fadeIn ease 2s;
   }
 
+.about-ScrollArea {
+  width: 100vw;
+  height: 70vh;
+  overflow: scroll;
+}
+
 .about-Title {
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -29,9 +31,6 @@
 }
 
 .about-SubTitle {
-  position: -webkit-sticky;
-  position: sticky;
-  /* top: 15vh; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -44,7 +43,12 @@
   font-size: 20px;
 }
 
-.about-LinkItem {
+.about-ScrollContent {
+  width: 100vw;
+  height: 100vh;
+}
+
+.about-NavLinkItem {
   color: white;
   font-family: 'Amiko', sans-serif;
   font-size: 14px;
