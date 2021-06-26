@@ -1,10 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiko&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap');
+
 .resources-Content {
-    margin-top: 5%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
     /* https://medium.com/cloud-native-the-gathering/how-to-use-css-to-fade-in-and-fade-out-html-text-and-pictures-f45c11364f08 */
     animation: fadeIn ease 2s;
     -webkit-animation: fadeIn ease 2s;
@@ -12,6 +13,58 @@
     -o-animation: fadeIn ease 2s;
     -ms-animation: fadeIn ease 2s;
   }
+
+.resources-ScrollArea {
+  width: 100vw;
+  height: 70vh;
+  overflow: scroll;
+}
+
+.resources-Title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #202A5D;
+    width: 100vw;
+    height: 15vh;
+}
+
+.resources-SubTitle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #B93838;
+  width: 100vw;
+  height: 8vh;
+  color: white;
+  font-family: 'Amiko', sans-serif;
+  font-size: 20px;
+}
+
+.resources-ScrollContent {
+  width: 100vw;
+  height: 100vh;
+}
+
+.resources-NavLinkItem {
+  color: white;
+  font-family: 'Amiko', sans-serif;
+  font-size: 14px;
+}
+
+.resources-NavTitle {
+  color: white;
+  font-family: 'Amiko', sans-serif;
+  font-size: 28px;
+}
+.resources-NavLinks {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
   
 @keyframes fadeIn {
   0% {
