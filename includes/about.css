@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiko&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap');
+
 .about-Content {
-    margin-top: 5%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -12,6 +14,53 @@
     -o-animation: fadeIn ease 2s;
     -ms-animation: fadeIn ease 2s;
   }
+
+.about-Title {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #202A5D;
+    width: 100vw;
+    height: 15vh;
+}
+
+.about-SubTitle {
+  position: -webkit-sticky;
+  position: sticky;
+  /* top: 15vh; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #B93838;
+  width: 100vw;
+  height: 8vh;
+  color: white;
+  font-family: 'Amiko', sans-serif;
+  font-size: 20px;
+}
+
+.about-LinkItem {
+  color: white;
+  font-family: 'Amiko', sans-serif;
+  font-size: 14px;
+}
+
+.about-NavTitle {
+  color: white;
+  font-family: 'Amiko', sans-serif;
+  font-size: 28px;
+}
+.about-NavLinks {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
   
 @keyframes fadeIn {
   0% {
