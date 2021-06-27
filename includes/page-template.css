@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiko&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap');
+
+[class*=content] {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* https://medium.com/cloud-native-the-gathering/how-to-use-css-to-fade-in-and-fade-out-html-text-and-pictures-f45c11364f08 */
+    animation: fadeIn ease 1s;
+    -webkit-animation: fadeIn ease 1s;
+    -moz-animation: fadeIn ease 1s;
+    -o-animation: fadeIn ease 1s;
+    -ms-animation: fadeIn ease 1s;
+  }
+
+[class*=scroll-area] {
+  width: 100vw;
+  height: 70vh;
+  overflow: scroll;
+}
+
+[class*=title-container] {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #202A5D;
+    width: 100vw;
+    height: 15vh;
+}
+
+[class*=scroll-subtitle] {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #B93838;
+  width: 100vw;
+  height: 8vh;
+  color: white;
+  font-family: 'Amiko', sans-serif;
+  font-size: 20px;
+}
+
+[class*=scroll-content-section] {
+  width: 100vw;
+  height: 100vh;
+}
+
+[class*=nav-link-item] {
+  color: white;
+  font-family: 'Amiko', sans-serif;
+  font-size: 14px;
+}
+
+[class*=nav-title] {
+  color: white;
+  font-family: 'Amiko', sans-serif;
+  font-size: 28px;
+}
+[class*=nav-links-container] {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+  
+@keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+    }
+}
