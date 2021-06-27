@@ -3,22 +3,95 @@
   <head>
     <!-- Required for Navbar -->
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-    <link rel="stylesheet" href="../includes/calendar.css">
-    <title>Calendar</title>
+    <link href="/includes/bootstrap-5.0.2-dist/css/bootstrap.css" rel="stylesheet">
+    <script src="includes/bootstrap-5.0.2-dist/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="../includes/page-template.css">
+    <title>Resources</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
-    <div class="nav-placeholder"></div>
-    <script>
-      $(function(){
-        $(".nav-placeholder").load("navbar.html");
-      });
-    </script>
-    <div class="calendar-Content">
-        <h1>Calendar Page</h1>
+    <link rel="stylesheet" href="../includes/navbar.css">
+    <div class= "index-Navbar">
+      <div class= "index-NavbarTop">
+          <div class= "index-NavbarLogo">
+            <a class="nav-link" href="./index.html">
+              <div class="index-Logo">
+                ACC
+              </div>
+            </a>
+          </div>
+          <div class="index-NavbarSearch">
+            <!-- <a class="navbar-brand" href="#">ACC</a> -->
+              <div class="nav-item">
+                <a class="nav-link" href="./contact.html">
+                  <div class= "index-NavItem">
+                    Contact
+                  </div>
+                </a>
+              </div>
+              <div class="nav-item">
+                <a class="nav-link" href="./about.html">
+                  <div class= "index-NavItem">
+                    Search
+                  </div>
+                </a>
+              </div>
+              <div class="nav-item">
+                <a class="nav-link" href="./about.html">
+                  <div class= "index-NavItem">
+                    Sign In
+                  </div>
+                </a>
+              </div>
+          </div>
+      </div>
+      <div class="index-NavbarLinks nav nav-pills">
+        <div class="nav-item">
+          <a id= "about-nav" class="nav-link" href="./about.html">
+            <div class= "index-NavItem">
+              About
+          </div>
+          </a>
+        </div>
+        <div class="nav-item">
+          <a id= "resources-nav" class="nav-link" href="./resources.html">           
+            <div class= "index-NavItem">
+              Resources
+            </div>
+          </a>
+        </div>
+        <div class="nav-item">
+          <a id= "register-nav" class="nav-link" href="./register.html">
+            <div class= "index-NavItem">
+              Register
+            </div>
+          </a>
+        </div>
+        <div class="nav-item">
+          <a id= "calendar-nav" class="nav-link active" href="./calendar.html">
+            <div class= "index-NavItem">
+              Calendar
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="calendar-content">
+      <div class="calendar-title-container">
+        <div class="calendar-nav-title">Calendar</div>
+        <div class="calendar-nav-links-container">
+          <a class="nav-link" href="#meeting">
+            <div class= " calendar-nav-link-item">
+              Meetings
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class= "calendar-scroll-area">
+        <div id="meeting" class="calendar-scroll-subtitle"> Meetings </div>
+          <div class="calendar-scroll-content-section"></div>
+      </div>
     </div>
   </body>
 </html>
