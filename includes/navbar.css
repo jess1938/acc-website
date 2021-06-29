@@ -11,7 +11,7 @@
     justify-content: center;
     width: 100vw;
     height: 15vh;
-    padding: 24px;
+    /* padding: 24px; */
 }
 
 .index-NavbarTop {
@@ -30,16 +30,10 @@
     color: white;
     width: 72px;
     height: 72px;
-    /* margin-top: 36px;
-    margin-left: 24px; */
 }
 
 .index-Logo {
     color: white;
-}
-
-.index-NavItem {
-    color: black;
 }
 
 .nav-item {
@@ -49,16 +43,26 @@
 }
 
 .nav-item:hover {
-    background-color:rgb(192, 192, 192);
-    opacity: 40%;
+    background-color: #a4a9c2;
+    opacity: 30%;
 }
+
+.nav-pills .nav-item .nav-link {
+    color: rgb(0, 0, 0);
+}
+
+.nav-pills .nav-item .nav-link.active {
+    color: #fff;
+    background-color: #202A5D;
+}
+
 
 .index-NavbarLinks {
     display: flex;
     flex-direction: row;
     justify-content:space-evenly;
     width: 100vw;
-    margin-bottom: 12px;
+    margin-bottom: -15px;
 }
 
 .index-NavbarSearch {
