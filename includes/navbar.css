@@ -3,7 +3,7 @@
 
 .index-Navbar {
     font-family: 'Amiko', sans-serif;
-    font-size: 18px;
+    font-size: 20px;
     color: black;
     display: flex;
     flex-direction: column;
@@ -49,11 +49,13 @@
 
 .nav-pills .nav-item .nav-link {
     color: rgb(0, 0, 0);
+    /* background-color: rgba(32,42,93, 0.05); */
 }
 
 .nav-pills .nav-item .nav-link.active {
     color: #fff;
     background-color: #202A5D;
+    opacity: 100%;
 }
 
 
@@ -61,8 +63,8 @@
     display: flex;
     flex-direction: row;
     justify-content:space-evenly;
-    width: 100vw;
-    margin-bottom: -15px;
+    width: 85vw;
+    margin-bottom: -13px;
 }
 
 .index-NavbarSearch {
