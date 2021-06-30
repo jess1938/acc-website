@@ -1,9 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Amiko&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap');
 
+.index-NavbarLinks li:hover > ul.dropdown-menu {
+    display: block;
+}
+.dropdown-submenu {
+    position:relative;
+}
+.dropdown-submenu>.dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top:-6px;
+}
+
+/* rotate caret on hover */
+.dropdown-menu > li > a:hover:after {
+    text-decoration: underline;
+    transform: rotate(-90deg);
+} 
+
 .index-Navbar {
     font-family: 'Amiko', sans-serif;
-    font-size: 20px;
+    font-size: 18px;
     color: black;
     display: flex;
     flex-direction: column;
@@ -11,6 +29,7 @@
     justify-content: center;
     width: 100vw;
     height: 15vh;
+    padding-bottom: 24px;
     /* padding: 24px; */
 }
 
@@ -36,15 +55,9 @@
     color: white;
 }
 
-.nav-item {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 .nav-item:hover {
-    background-color: #a4a9c2;
-    opacity: 30%;
+    background-color: rgba(201, 206, 219, 0.4);
+    border-radius: 4px;
 }
 
 .nav-pills .nav-item .nav-link {
