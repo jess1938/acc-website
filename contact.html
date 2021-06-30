@@ -41,15 +41,26 @@
           </ul>
       </div>
       <ul class="index-NavbarLinks nav nav-pills">
-        <li class="nav-item">
-          <a id= "about-nav" class="nav-link" href="about.html">
-              About
-          </a>
+        <li class="nav-item dropdown">
+          <a id= "about-nav" class="nav-link dropdown-toggle" href="about.html" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> About </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <li><a class="dropdown-item" href="about.html#team">Team</a></li>
+            <li><a class="dropdown-item" href="about.html#mission">Mission</a></li>
+            <li><a class="dropdown-item" href="about.html#plans">Plans</a></li>
+        </ul>
         </li>
-        <li class="nav-item">
-          <a id= "resources-nav" class="nav-link" href="resources.html">           
-              Resources
-          </a>
+        <li class="nav-item dropdown">
+          <a id= "resources-nav" class="nav-link dropdown-toggle" href="resources.html" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Resources </a>
+
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <li><a class="dropdown-item" href="resources.html">Tutors</a></li>
+            <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="resources.html">Students</a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="resources.html#faq">FAQ</a></li>
+                    <li><a class="dropdown-item" href="resources.html#materials">Materials</a></li>
+                </ul>
+            </li>
+        </ul>
         </li>
         <li class="nav-item">
           <a id= "register-nav" class="nav-link" href="register.html">
