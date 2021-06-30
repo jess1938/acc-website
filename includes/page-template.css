@@ -12,7 +12,8 @@
     -moz-animation: fadeIn ease 1s;
     -o-animation: fadeIn ease 1s;
     -ms-animation: fadeIn ease 1s; */
-  }
+}
+
 
 [class*=scroll-area] {
   width: 100vw;
@@ -27,7 +28,7 @@
     justify-content: center;
     background-color: #202A5D;
     width: 100vw;
-    height: 15vh;
+    height: 13vh;
 }
 
 [class*=scroll-subtitle] {
