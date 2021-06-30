@@ -1,112 +1,69 @@
-@import url('https://fonts.googleapis.com/css2?family=Amiko&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap');
-
-.about-Content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    /* https://medium.com/cloud-native-the-gathering/how-to-use-css-to-fade-in-and-fade-out-html-text-and-pictures-f45c11364f08 */
-    animation: fadeIn ease 2s;
-    -webkit-animation: fadeIn ease 2s;
-    -moz-animation: fadeIn ease 2s;
-    -o-animation: fadeIn ease 2s;
-    -ms-animation: fadeIn ease 2s;
-  }
-
-.about-ScrollArea {
-  width: 100vw;
-  height: 70vh;
-  overflow: scroll;
-}
-
-.about-Title {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: #202A5D;
-    width: 100vw;
-    height: 15vh;
-}
-
-.about-SubTitle {
+.about-scroll-content-section .about-team-row-one .about-team-row-two{
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  background-color: #B93838;
-  width: 100vw;
-  height: 8vh;
-  color: white;
-  font-family: 'Amiko', sans-serif;
-  font-size: 20px;
 }
 
-.about-ScrollContent {
-  width: 100vw;
-  height: 100vh;
+.about-image {
+  width: 10vw;
+  height: 10vw;
+  margin: 12px;
+  background-color: rgb(46, 44, 44);
 }
 
-.about-NavLinkItem {
-  color: white;
-  font-family: 'Amiko', sans-serif;
-  font-size: 14px;
+[class^="about-team-row-text"] {
+  text-align: center;
 }
 
-.about-NavTitle {
-  color: white;
-  font-family: 'Amiko', sans-serif;
-  font-size: 28px;
-}
-.about-NavLinks {
+[class^="about-team-row-images"] {
   display: flex;
   flex-direction: row;
-  align-items: center;
-  justify-content: center;
-}
-  
-@keyframes fadeIn {
-  0% {
-    opacity:0;
-  }
-  100% {
-    opacity:1;
-  }
+  margin: 12px;
 }
 
-@-moz-keyframes fadeIn {
-  0% {
-    opacity:0;
-  }
-  100% {
-    opacity:1;
-  }
+/* https://www.w3schools.com/howto/howto_css_flip_card.asp */
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+  background-color: transparent;
+  width: 10vw;
+  height: 10vw;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
 }
 
-@-webkit-keyframes fadeIn {
-  0% {
-    opacity:0;
-  }
-  100% {
-    opacity:1;
-  }
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
 }
 
-@-o-keyframes fadeIn {
-  0% {
-    opacity:0;
-  }
-  100% {
-    opacity:1;
-  }
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
 }
 
-@-ms-keyframes fadeIn {
-  0% {
-    opacity:0;
-  }
-  100% {
-    opacity:1;
-    }
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #202A5D;
+  color: rgb(255, 255, 255);
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: #B93838;
+  color: white;
+  transform: rotateY(180deg);
 }
