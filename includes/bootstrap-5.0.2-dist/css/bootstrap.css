@@ -4425,6 +4425,7 @@ textarea.form-control-lg {
 @media (prefers-reduced-motion: reduce) {
   .accordion-button {
     transition: none;
+    width: 100%;
   }
 }
 .accordion-button:not(.collapsed) {
@@ -4464,6 +4465,7 @@ textarea.form-control-lg {
 
 .accordion-header {
   margin-bottom: 0;
+  width: 100vw;
 }
 
 .accordion-item {
