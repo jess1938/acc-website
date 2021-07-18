@@ -34,7 +34,6 @@
 }
 
 .index-slide-one-left {
-  font-family: 'Amiko', sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -48,6 +47,7 @@
 
 .index-slide-one-right {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   color: white;
@@ -55,16 +55,12 @@
   width: 50vw;
   height: 85vh;
   background-color: #B93838;
-
-}
-
-.index-slide-one-right-text {
   font-family: 'Source Sans Pro', sans-serif;
   line-height: 2;
   font-size: 24px;
-  width: 35vw;
   /* height: 50vh; */
-  overflow: scroll;
+  overflow-y: scroll;
+
 }
   
 @keyframes fadeIn {
