@@ -1,19 +1,27 @@
-.about-scroll-content-section .about-team-row-one .about-team-row-two{
+/* .about-scroll-content-section {
+  font-family: 'Source Sans Pro', sans-serif; 
+  line-height: 2; 
+  font-size: 24px; 
+  padding-left: 60px; 
+  padding-right: 60px;
+} */
+
+.about-team-row-one .about-team-row-two{
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
 .about-image {
-  width: 10vw;
-  height: 10vw;
+  width: 12vw;
+  height: 12vw;
   margin: 12px;
   background-color: rgb(46, 44, 44);
 }
 
 .holder {   
-  width: 10vw;
-  height: 10vh;
+  width: 12vw;
+  height: 12vh;
   display: inline-block; 
 }
 
@@ -36,9 +44,9 @@
 /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 .flip-card {
   background-color: transparent;
-  width: 10vw;
-  height: 10vw;
-  border: 1px solid #f1f1f1;
+  width: 12vw;
+  height: 12vw;
+  /* border: 1px solid #f1f1f1; */
   perspective: 1000px; /* Remove this if you don't want the 3D effect */
   overflow: hidden;
 }
@@ -78,4 +86,7 @@
   background-color: #B93838;
   color: white;
   transform: rotateY(180deg);
+  font-size: 16px;
+  padding: 8px;
+  overflow: scroll;
 }
