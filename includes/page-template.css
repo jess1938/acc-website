@@ -51,6 +51,7 @@
   line-height: 2; 
   font-size: 24px; 
   padding: 40px; 
+  overflow: scroll;
   /* padding-right: 60px; */
 }
 

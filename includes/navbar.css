@@ -65,6 +65,21 @@
     /* background-color: rgba(32,42,93, 0.05); */
 }
 
+
+.register-tab{
+    background-color: rgba(185, 56, 56, 0.4);
+    animation: fade 2.5s linear 1 forwards;
+    animation-iteration-count:infinite;
+    border-radius: 4px;
+  }
+  
+  @keyframes fade {
+    0% { opacity: 0.2; }
+    50% { opacity: .6; }
+    100% { opacity: 0.2; }
+  }
+  
+
 #register-nav {
     font-weight: bolder;
 }
