@@ -7,12 +7,13 @@
   align-items: center;
   justify-content: center;
   /* https://medium.com/cloud-native-the-gathering/how-to-use-css-to-fade-in-and-fade-out-html-text-and-pictures-f45c11364f08 */
-  animation: fadeIn ease 1s;
+  /* animation: fadeIn ease 1s;
   -webkit-animation: fadeIn ease 1s;
   -moz-animation: fadeIn ease 1s;
   -o-animation: fadeIn ease 1s;
-  -ms-animation: fadeIn ease 1s;
+  -ms-animation: fadeIn ease 1s; */
 }
+
 
 .intro {
   position: fixed;
@@ -23,6 +24,9 @@
   height: 100vh;
   background-color: white;
   transition: 1s;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 .logo-header {
@@ -32,6 +36,9 @@
   transform: translate(-50%, -50%);
   font-family: 'Source Sans Pro', sans-serif;
   color: #202A5D;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 .logo {
@@ -39,18 +46,27 @@
   display: inline-block;
   bottom: -20px;
   opacity: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 .logo.active {
   bottom: 0;
   opacity: 1;
   transition: ease-in-out 0.5s;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 .logo.fade {
   bottom: 150px;
   opacity: 0;
   transition: ease-in-out 0.5s;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 [class^="index-slide"] {

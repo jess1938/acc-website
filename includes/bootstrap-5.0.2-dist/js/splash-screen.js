@@ -1,7 +1,4 @@
-let intro = document.querySelector('.intro');
-let logo = document.querySelector('.logo-header');
-let logoSpan = document.querySelectorAll('.logo');
-
+// $(".splash").delay(2000).fadeIn("slow");
 window.addEventListener('DOMContentLoaded', () => {
     setTimeout(() => {
 
