@@ -13,7 +13,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
-    <div class= "index-Navbar">
+    <!-- <div class= "index-Navbar">
       <div class= "index-NavbarTop">
           <div class= "index-NavbarLogo">
             <a class="nav-link" href="home.html">
@@ -65,7 +65,8 @@
           </a>
         </li>
       </ul>
-    </div>
+    </div> -->
+    <div id="nav-placeholder-resources"></div>
     <div class="resources-content">
       <div class="resources-title-container">
         <div class="resources-nav-title">Resources</div>
@@ -238,5 +239,14 @@
           </div>
       </div>
     </div>
+    <script>
+      $(function(){
+        $("#nav-placeholder-resources").load("navbar.html", function(responseTxt, statusTxt, xhr) {
+          if (statusTxt == "success") {
+            $(".resources-tab .nav-link").addClass("active");
+          }
+        });
+      });
+    </script>
   </body>
 </html>

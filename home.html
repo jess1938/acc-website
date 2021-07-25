@@ -16,7 +16,7 @@
   <body>
 
     <div class="main">
-    <div class= "index-Navbar">
+    <!-- <div class= "index-Navbar">
       <div class= "index-NavbarTop">
           <div class= "index-NavbarLogo">
             <a class="nav-link" href="home.html">
@@ -66,7 +66,8 @@
           </a>
         </li>
       </ul>
-    </div>
+    </div> -->
+    <div id="nav-placeholder-home"></div>
     <div class= "index-content">
       <div id="index-Carousel" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
@@ -117,5 +118,10 @@
       </div>
     </div>
   </div>
+  <script>
+    $(function(){
+      $("#nav-placeholder-home").load("navbar.html");
+    });
+  </script>
   </body>
 </html>

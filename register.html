@@ -14,7 +14,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
-    <div class= "index-Navbar">
+    <!-- <div class= "index-Navbar">
       <div class= "index-NavbarTop">
           <div class= "index-NavbarLogo">
             <a class="nav-link" href="home.html">
@@ -66,7 +66,8 @@
           </a>
         </li>
       </ul>
-    </div>
+    </div> -->
+    <div id="nav-placeholder-register"></div>
     <div class="register-content">
       <div class="register-title-container">
         <div class="register-nav-title">Register</div>
@@ -83,5 +84,14 @@
           <div class="register-scroll-content-section"></div>
       </div>
     </div>
+    <script>
+      $(function(){
+        $("#nav-placeholder-register").load("navbar.html", function(responseTxt, statusTxt, xhr) {
+          if (statusTxt == "success") {
+            $(".register-tab .nav-link").addClass("active");
+          }
+        });
+      });
+    </script>
   </body>
 </html>

@@ -14,7 +14,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
-    <div class= "index-Navbar">
+    <!-- <div class= "index-Navbar">
       <div class= "index-NavbarTop">
           <div class= "index-NavbarLogo">
             <a class="nav-link" href="home.html">
@@ -66,15 +66,8 @@
           </a>
         </li>
       </ul>
-    </div>
-    <!-- <div class="navbar"></div>
-    <script>
-      $(document).ready( function() {
-        $(".navbar").load("navbar.html", function() {
-          console.log("loaded");
-        });
-      });
-    </script> -->
+    </div> -->
+    <div id="nav-placeholder-about"></div>
     <div class="about-content">
       <div class="about-title-container">
         <div class="about-nav-title">About</div>
@@ -189,5 +182,14 @@
           </div>
       </div>
     </div>
+    <script>
+      $(function(){
+        $("#nav-placeholder-about").load("navbar.html", function(responseTxt, statusTxt, xhr) {
+          if (statusTxt == "success") {
+            $(".about-tab .nav-link").addClass("active");
+          }
+        });
+      });
+    </script>
   </body>
 </html>

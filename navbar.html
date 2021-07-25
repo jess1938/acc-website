@@ -1,92 +1,51 @@
-<link rel="stylesheet" href="includes/navbar.css">
-<link href="/includes/bootstrap-5.0.2-dist/css/bootstrap.css" rel="stylesheet">
-<script src="includes/bootstrap-5.0.2-dist/js/bootstrap.js"></script>
 <div class= "index-Navbar">
   <div class= "index-NavbarTop">
-      <div class= "index-NavbarLogo">
-        <a class="nav-link" href="./index.html">
+      <div class= "index-NavbarLogo home-tab">
+        <a class="nav-link" href="home.html">
           <div class="index-Logo">
             ACC
           </div>
         </a>
       </div>
-      <div class="index-NavbarSearch nav nav-pills">
-        <!-- <a class="navbar-brand" href="#">ACC</a> -->
-          <div class="nav-item">
-            <a class="nav-link" href="./about.html#contact-us">
-              <div class= "index-NavItem">
-                Contact
-              </div>
-            </a>
-          </div>
-          <div class="nav-item">
-            <a class="nav-link" href="./about.html">
-              <div class= "index-NavItem">
-                Search
-              </div>
-            </a>
-          </div>
-          <div class="nav-item">
-            <a class="nav-link" href="./signup.html">
-              <div class= "index-NavItem">
-                Sign In
-              </div>
-            </a>
-          </div>
-      </div>
+      <ul class="index-NavbarSearch nav nav-pills">
+        <li class="nav-item contact-tab">
+          <a class="nav-link" href="about.html#contact-us">
+             Contact Us  ☎
+          </a>
+        </li>
+      </ul>
   </div>
-  <div class="index-NavbarLinks nav nav-pills">
-    <div class="nav-item">
-      <a id= "about-nav" class="nav-link active" href="./about.html">
-        <div class= "index-NavItem">
-          About
-      </div>
-      </a>
-    </div>
-    <div class="nav-item">
-      <a id= "resources-nav" class="nav-link" href="./resources.html">           
-        <div class= "index-NavItem">
-          Resources
-        </div>
-      </a>
-    </div>
-    <div class="nav-item">
-      <a id= "register-nav" class="nav-link" href="./register.html">
-        <div class= "index-NavItem">
-          Register
-        </div>
-      </a>
-    </div>
-    <div class="nav-item">
-      <a id= "calendar-nav" class="nav-link" href="./calendar.html">
-        <div class= "index-NavItem">
-          Schedule
-        </div>
-      </a>
-    </div>
-  </div>
-</div>
-<div class="about-content">
-  <div class="about-title-container">
-    <div class="about-nav-title">About</div>
-    <div class="about-nav-links-container">
-      <a class="nav-link" href="#team">
-        <div class= " about-nav-link-item">
-          Team
-        </div>
-      </a>
-      <div style="color: white;"> | </div>
-      <a class="nav-link" href="#mission">
-        <div class= " about-nav-link-item">
-          Mission
-        </div>
-      </a>
-      <div style="color: white;"> | </div>
+  <ul class="index-NavbarLinks nav nav-pills">
+    <li class="nav-item dropdown about-tab">
+      <a id= "about-nav" class="nav-link dropdown-toggle" href="about.html" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> About </a>
+      <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+        <li><a class="dropdown-item" href="about.html#mission">Mission</a></li>            
+        <li><a class="dropdown-item" href="about.html#team">Team</a></li>
+        <li><a class="dropdown-item" href="about.html#contact-us">Contact</a></li>
+    </ul>
+    </li>
+    <li class="nav-item dropdown resources-tab">
+      <a id= "resources-nav" class="nav-link dropdown-toggle" href="resources.html" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Resources </a>
 
-      <a class="nav-link" href="#contact-us">
-        <div class= " about-nav-link-item">
-          contact-us
-        </div>
+      <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+         
+        <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="resources.html">Students</a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="resources.html#faq">FAQ</a></li>
+                <li><a class="dropdown-item" href="resources.html#materials">Materials</a></li>
+            </ul>
+        </li>
+    </ul>
+    </li>
+    <li class="nav-item register-tab">
+      <a id= "register-nav" class="nav-link" href="register.html">
+          Register
       </a>
-    </div>
-  </div>
+    </li>
+    <li class="nav-item calendar-tab">
+      <a id= "calendar-nav" class="nav-link" href="calendar.html">
+          Schedule
+      </a>
+    </li>
+  </ul>
+</div>
