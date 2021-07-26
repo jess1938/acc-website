@@ -72,25 +72,43 @@
       <div class="register-title-container">
         <div class="register-nav-title">Register</div>
         <div class="register-nav-links-container">
-          <a class="nav-link" href="#application">
+          <a class="nav-link" href="#english">
             <div class= " register-nav-link-item">
-              Application
+              English
+            </div>
+          </a>
+          <div style="color: white;"> | </div>
+          <a class="nav-link" href="#spanish">
+            <div class= " register-nav-link-item">
+              Español
             </div>
           </a>
         </div>
       </div>
       <div class= "register-scroll-area">
-        <div id="application" class="register-scroll-subtitle"> Application </div>
-          <div class="register-scroll-content-section"></div>
+        <div id="english" class="register-scroll-subtitle"> English </div>
+          <div class="register-scroll-content-section">
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdY10xAMoQsncRFAHiHeI6vj3PGIm9UW7H0hfyDnTE6v-eNDA/viewform?embedded=true" width="640" height="3122" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe> 
+          </div>
+        <div id="spanish" class="register-scroll-subtitle"> Español </div>
+        <div class="register-scroll-content-section">
+          <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScpzVqVb-IkPsKXmFd6Ed7jGCdr2_dFC2zfFxL2FLwlX-pFdQ/viewform?embedded=true" width="640" height="3112" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+        </div>
       </div>
+  </div>
     </div>
     <script>
+
       $(function(){
         $("#nav-placeholder-register").load("navbar.html", function(responseTxt, statusTxt, xhr) {
           if (statusTxt == "success") {
             $(".register-tab .nav-link").addClass("active");
           }
         });
+        $(".#engish").click(function () {
+          $("#spanish").removeClass("active");
+          $("#english").addClass("active");        
+      });
       });
     </script>
   </body>
