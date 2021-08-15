@@ -14,11 +14,11 @@
 }
 
 body {
-  animation: fadeIn ease 1.5s;
-  -webkit-animation: fadeIn ease 1.5s;
-  -moz-animation: fadeIn ease 1.5s;
-  -o-animation: fadeIn ease 1.5s;
-  -ms-animation: fadeIn ease 1.5s;
+  animation: fadeInUp ease-in-out 1.2s;
+  -webkit-animation: fadeInUp ease-in-out 1.2s;
+  -moz-animation: fadeInUp ease-in-out 1.2s;
+  -o-animation: fadeInUp ease-in-out 1.2s;
+  -ms-animation: fadeInUp ease-in-out 1.2s;
 }
 
 [class*=content] {

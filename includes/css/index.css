@@ -119,6 +119,7 @@
   height: 85vh;
   background-color: #202A5D;
   padding: 84px;
+  font-size: 1.5vw;
   overflow: scroll;
 }
 
@@ -134,7 +135,7 @@
   background-color: #B93838;
   font-family: 'Source Sans Pro', sans-serif;
   line-height: 2;
-  font-size: 24px;
+  font-size: 1.5vw;
   /* height: 50vh; */
   overflow-y: scroll;
 
