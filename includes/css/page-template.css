@@ -59,8 +59,11 @@ body {
   font-family: 'Source Sans Pro', sans-serif; 
   line-height: 2; 
   font-size: 24px; 
-  padding: 9vh; 
-  margin-bottom: 70px;
+  padding-left: 9vh; 
+  padding-right: 9vh;
+  padding-top: 12vh;
+  margin-bottom: 12vh;
+  /* margin-bottom: 70px; */
   overflow: scroll;
   /* padding-right: 60px; */
 }
