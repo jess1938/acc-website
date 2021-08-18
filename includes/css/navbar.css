@@ -40,13 +40,13 @@
     padding-top: 24px;
 } */
 
-.index-Logo {  
+.navbar-logo {  
     width: 84px;
     height: 84px;
     display: inline-block; 
 }
   
-.index-Logo img {
+.navbar-logo img {
     width: 100%; 
 }​
 
