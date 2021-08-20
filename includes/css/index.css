@@ -28,10 +28,6 @@
   justify-content: center;
   align-items: center;
   color: white;
-  /* background-image: url("../images/acc2.png");
-  background-size: 40vw;
-  background-position: center; 
-  background-repeat: no-repeat; */
   background-color: #202A5D;
   padding: 84px;
   font-size: 32px;
@@ -41,14 +37,12 @@
 
 .index-slide-one-right, .index-slide-two-right {
   color: white;
-  padding: 48px;
+  padding: 60px;
   background-color: #B93838;
   font-family: 'Source Sans Pro', sans-serif;
   line-height: 2;
   font-size: 24px;
-  overflow-y: scroll;
-  padding-top: 12vh;
-  padding-bottom: 12vh;
+  overflow: scroll;
 }
 
 .index-slide-three {
@@ -65,7 +59,7 @@
   width: 30vw;
   height: 30vw;
   border-radius: 50%;
-  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  perspective: 1000px;
 }
 
 /* This container is needed to position the front and back side */
@@ -94,6 +88,12 @@
 
 /* Style the front side (fallback if image is missing) */
 .flip-box-front {
+  color: white;
+}
+
+/* Style the back side */
+.flip-box-back {
+  color: white;
   display: flex;
   align-content: center;
   align-items: center;
@@ -102,12 +102,6 @@
   padding: 2vw;
   font-size: 2vw;
   line-height: 2;
-  color: white;
-}
-
-/* Style the back side */
-.flip-box-back {
-  color: white;
   transform: rotateY(180deg);
 }
 

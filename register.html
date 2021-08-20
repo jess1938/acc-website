@@ -5,9 +5,9 @@
     <script src="node_modules/jquery/dist/jquery.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <link rel="icon" type="image/png" sizes="32x32" href="includes/images/acc/favicon.ico">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="includes/css/page-template.css">
     <link rel="stylesheet" href="includes/css/navbar.css">
-
     <title>Register</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -19,38 +19,36 @@
         <div class="register-nav-title">Register</div>
         <div class="register-nav-links-container">
           <a class="nav-link" href="#english">
-            <div class= "register-nav-link-item">English</div>
+            <div class= " register-nav-link-item">
+              English
+            </div>
           </a>
           <div style="color: white;"> | </div>
           <a class="nav-link" href="#spanish">
-            <div class= " register-nav-link-item">Español</div>
+            <div class= " register-nav-link-item">
+              Spanish
+            </div>
           </a>
         </div>
       </div>
       <div class= "register-scroll-area">
         <div id="english" class="register-scroll-subtitle"> English </div>
-          <div class="register-scroll-content-section">
-            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdY10xAMoQsncRFAHiHeI6vj3PGIm9UW7H0hfyDnTE6v-eNDA/viewform?embedded=true" width="640" height="3122" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe> 
+          <div class="register-scroll-content-section">  
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdY10xAMoQsncRFAHiHeI6vj3PGIm9UW7H0hfyDnTE6v-eNDA/viewform?embedded=true" width="640" height="1800" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
           </div>
-        <div id="spanish" class="register-scroll-subtitle"> Español </div>
-        <div class="register-scroll-content-section">
-          <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScpzVqVb-IkPsKXmFd6Ed7jGCdr2_dFC2zfFxL2FLwlX-pFdQ/viewform?embedded=true" width="640" height="3112" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-        </div>
+        <div id="spanish" class="register-scroll-subtitle"> Spanish </div>
+          <div class="register-scroll-content-section">
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScpzVqVb-IkPsKXmFd6Ed7jGCdr2_dFC2zfFxL2FLwlX-pFdQ/viewform?embedded=true" width="640" height="1800" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+          </div>
       </div>
-  </div>
     </div>
     <script>
-
       $(function(){
         $("#nav-placeholder-register").load("navbar.html", function(responseTxt, statusTxt, xhr) {
           if (statusTxt == "success") {
             $(".register-tab .nav-link").addClass("active");
           }
         });
-        $(".#engish").click(function () {
-          $("#spanish").removeClass("active");
-          $("#english").addClass("active");        
-      });
       });
     </script>
   </body>
