@@ -4,7 +4,6 @@
 .index-content {
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
   justify-content: center;
   /* https://medium.com/cloud-native-the-gathering/how-to-use-css-to-fade-in-and-fade-out-html-text-and-pictures-f45c11364f08 */
   animation: fadeIn ease 1.5s;
@@ -19,13 +18,11 @@
   flex-direction: row;
   justify-content: center; 
   width: 100vw;
-  height: 85vh;
+  height: 90vh;
 }
 
 .index-slide-one-left, .index-slide-two-left {
-  display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   color: white;
   background-color: #202A5D;

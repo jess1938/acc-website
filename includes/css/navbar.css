@@ -1,24 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Amiko&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap');
 
-.index-NavbarLinks li:hover > ul.dropdown-menu {
-    display: block;
-}
-.dropdown-submenu {
-    position:relative;
-}
-.dropdown-submenu>.dropdown-menu {
-    top: 0;
-    left: 100%;
-    margin-top:-6px;
-}
-
-/* rotate caret on hover */
-.dropdown-menu > li > a:hover:after {
-    text-decoration: underline;
-    transform: rotate(-90deg);
-} 
-
 .index-Navbar {
     font-family: 'Amiko', sans-serif;
     font-size: 18px;
@@ -28,21 +10,13 @@
     align-items: center;
     justify-content: center;
     width: 100vw;
-    height: 15vh;
+    height: 10vh;
     /* padding-bottom: 24px; */
 }
 
-/* .index-NavbarTop {
-    display: flex;
-    align-content:flex-start;
-    width: auto;
-    max-width: 96vw;
-    padding-top: 24px;
-} */
-
 .navbar-logo {  
-    width: 84px;
-    height: 84px;
+    width: 68px;
+    height: 68px;
     display: inline-block; 
 }
   
@@ -50,14 +24,17 @@
     width: 100%; 
 }​
 
-.nav-item:hover {
-    background-color: rgba(201, 206, 219, 0.4);
-    border-radius: 4px;
+a:link {
+    color: black;
+  }
+
+.nav-item .nav-link {
+    color: rgb(0, 0, 0);
 }
 
-.nav-pills .nav-item .nav-link {
-    color: rgb(0, 0, 0);
-    /* background-color: rgba(32,42,93, 0.05); */
+.nav-link:hover {
+    background-color: rgba(12, 25, 85, 0.3);
+    border-radius: 8px;
 }
 
 
@@ -66,13 +43,13 @@
     animation: fade 2.5s linear 1 forwards;
     animation-iteration-count:infinite;
     border-radius: 4px;
-  }
+}
   
-  @keyframes fade {
+@keyframes fade {
     0% { opacity: 0.2; }
     50% { opacity: .6; }
     100% { opacity: 0.2; }
-  }
+}
   
 
 #register-nav {
