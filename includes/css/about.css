@@ -1,9 +1,18 @@
-/* .about-scroll-content-section {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  flex-direction: column !important;
-} */
+.about-content {
+  height: 90vh !important;
+}
+
+.about-title-container {
+  height: 15vh;
+}
+
+.about-scroll-area {
+  height: 75vh;
+}
+
+.about-scroll-content-section {
+  overflow: hidden;
+}
 
 .about-team-row-one .about-team-row-two{
   max-width: 100vw;
@@ -41,8 +50,8 @@
 /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 .flip-card {
   background-color: transparent;
-  width: 12vw;
-  height: 12vw;
+  width: 214px;
+  height: 214px;
   /* border: 1px solid #f1f1f1; */
   perspective: 1000px; /* Remove this if you don't want the 3D effect */
   overflow: hidden;
@@ -83,7 +92,7 @@
   background-color: #B93838;
   color: white;
   transform: rotateY(180deg);
-  font-size: 16px;
+  font-size: 12px;
   padding: 8px;
   overflow: scroll;
 }
