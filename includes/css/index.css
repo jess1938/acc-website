@@ -46,7 +46,7 @@
   background-color: #B93838;
   font-family: 'Amiko', sans-serif;
   display: flex;
-  justify-content: center;
+  justify-content:space-evenly;
   align-items: center;
 }
 
