@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Amiko&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap');
 
-@keyframes fadeInUp {
+/* @keyframes fadeInUp {
   0% {
     opacity: 0;
     transform: translate3d(0, 100%, 0);
@@ -19,7 +19,7 @@ body {
   -moz-animation: fadeInUp ease-in-out 1.2s;
   -o-animation: fadeInUp ease-in-out 1.2s;
   -ms-animation: fadeInUp ease-in-out 1.2s;
-}
+} */
 
 [class$=-content] {
   height: 90vh !important;

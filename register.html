@@ -13,8 +13,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
-    <div id="nav-placeholder-register"></div>
-    <div class="register-content">
+    <div class= "index-Navbar">
+      <div class= "index-NavbarLogo home-tab">
+        <a class="nav-link" href="index.html">
+          <div class="navbar-logo">
+            <img src="includes/images/acc2.png" alt="logo">
+          </div>
+        </a>
+      </div>
+      <ul class="index-NavbarLinks nav nav-pills">
+        <li class="nav-item about-tab">
+          <a id= "about-nav" class="nav-link" href="about.html"> About </a>
+        </li>
+        <li class="nav-item resources-tab">
+          <a id= "resources-nav" class="nav-link" href="resources.html"> Resources </a>
+        </li>
+        <li class="nav-item register-tab">
+          <a id= "register-nav" class="nav-link active" href="register.html"> Register </a>
+        </li>
+        <li class="nav-item calendar-tab">
+          <a id= "calendar-nav" class="nav-link" href="calendar.html"> Schedule </a>
+        </li>
+      </ul>
+    </div>    <div class="register-content">
       <div class="register-title-container">
         <div class="register-nav-title">Register</div>
         <div class="register-nav-links-container">
@@ -42,14 +63,5 @@
           </div>
       </div>
     </div>
-    <script>
-      $(function(){
-        $("#nav-placeholder-register").load("navbar.html", function(responseTxt, statusTxt, xhr) {
-          if (statusTxt == "success") {
-            $(".register-tab .nav-link").addClass("active");
-          }
-        });
-      });
-    </script>
   </body>
 </html>

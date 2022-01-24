@@ -14,8 +14,29 @@
   </head>
   <body>
     <div class="main-home">
-    <div id="nav-placeholder-index"></div>
-    <div class= "index-content">
+      <div class= "index-Navbar">
+        <div class= "index-NavbarLogo home-tab">
+          <a class="nav-link" href="index.html">
+            <div class="navbar-logo">
+              <img src="includes/images/acc2.png" alt="logo">
+            </div>
+          </a>
+        </div>
+        <ul class="index-NavbarLinks nav nav-pills">
+          <li class="nav-item about-tab">
+            <a id= "about-nav" class="nav-link" href="about.html"> About </a>
+          </li>
+          <li class="nav-item resources-tab">
+            <a id= "resources-nav" class="nav-link" href="resources.html"> Resources </a>
+          </li>
+          <li class="nav-item register-tab">
+            <a id= "register-nav" class="nav-link" href="register.html"> Register </a>
+          </li>
+          <li class="nav-item calendar-tab">
+            <a id= "calendar-nav" class="nav-link" href="calendar.html"> Schedule </a>
+          </li>
+        </ul>
+      </div>    <div class= "index-content">
       <div id="index-carousel" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#index-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -88,10 +109,5 @@
       </div>
     </div>
   </div>
-    <script>
-      $(function(){
-        $("#nav-placeholder-index").load("navbar.html");
-      });
-    </script>
   </body>
 </html>

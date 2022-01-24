@@ -14,7 +14,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
-    <div id="nav-placeholder-about"></div>
+    <div class= "index-Navbar">
+      <div class= "index-NavbarLogo home-tab">
+        <a class="nav-link" href="index.html">
+          <div class="navbar-logo">
+            <img src="includes/images/acc2.png" alt="logo">
+          </div>
+        </a>
+      </div>
+      <ul class="index-NavbarLinks nav nav-pills">
+        <li class="nav-item about-tab">
+          <a id= "about-nav" class="nav-link active" href="about.html"> About </a>
+        </li>
+        <li class="nav-item resources-tab">
+          <a id= "resources-nav" class="nav-link" href="resources.html"> Resources </a>
+        </li>
+        <li class="nav-item register-tab">
+          <a id= "register-nav" class="nav-link" href="register.html"> Register </a>
+        </li>
+        <li class="nav-item calendar-tab">
+          <a id= "calendar-nav" class="nav-link" href="calendar.html"> Schedule </a>
+        </li>
+      </ul>
+    </div>
     <div class="about-content">
       <div class="about-title-container">
         <div class="about-nav-title">About</div>
@@ -124,14 +146,5 @@
         </div>
       </div>
     </div>
-    <script>
-      $(function(){
-        $("#nav-placeholder-about").load("navbar.html", function(responseTxt, statusTxt, xhr) {
-          if (statusTxt == "success") {
-            $(".about-tab .nav-link").addClass("active");
-          }
-        });
-      });
-    </script>
   </body>
 </html>
