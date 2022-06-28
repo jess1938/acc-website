@@ -1,24 +1,59 @@
-.about-team-row-one .about-team-row-two{
-  max-width: 100vw;
-  max-height: 75vh;
+.about-scroll-content-section {
+  padding: 2.2em;
 }
 
 .about-image {
-  width: 212px;
-  height: 212px;
-  margin: 12px;
-  background-color: rgb(46, 44, 44);
+  margin: 1.1em;
+  position: relative;
+  /* background-color: rgb(46, 44, 44); */
+}
+
+/* https://www.w3schools.com/howto/howto_css_image_overlay.asp */
+.about-image-info {
+  display: flex;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  font-size: 15px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  opacity: 0;
+  transition: .25s ease;
+  background-color: #202A5D;
+}
+
+.about-image:hover .about-image-info {
+  opacity: .88;
 }
 
 .holder {   
-  width: 212px;
-  height: 212px;
-  display: inline-block; 
+  width: 9.5em;
+  height: 9.5em;
+  border-radius: 50%;
+  padding: .3em;
+  /* position: absolute;  */
+  overflow: hidden;
+  background-color: #202A5D;
 }
 
 .holder img {
-  width: 212px;
-  height: 212px;
+  max-width:100%;
+  border-radius: 50%;
+}
+
+/* .holder:hover {
+  display: none;
+} */
+
+h5 {
+  text-align: center;
 }​
 
 [class^="about-team-row-text"] {
@@ -28,56 +63,6 @@
 [class^="about-team-row-images"] {
   display: flex;
   flex-direction: row;
+  justify-content: center;
   margin: 12px;
-}
-
-/* https://www.w3schools.com/howto/howto_css_flip_card.asp */
-/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
-.flip-card {
-  background-color: transparent;
-  width: 214px;
-  height: 214px;
-  /* border: 1px solid #f1f1f1; */
-  perspective: 1000px; /* Remove this if you don't want the 3D effect */
-  overflow: hidden;
-}
-
-/* This container is needed to position the front and back side */
-.flip-card-inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  transition: transform 0.8s;
-  transform-style: preserve-3d;
-}
-
-/* Do an horizontal flip when you move the mouse over the flip box container */
-.flip-card:hover .flip-card-inner {
-  transform: rotateY(180deg);
-}
-
-/* Position the front and back side */
-.flip-card-front, .flip-card-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  -webkit-backface-visibility: hidden; /* Safari */
-  backface-visibility: hidden;
-}
-
-/* Style the front side (fallback if image is missing) */
-.flip-card-front {
-  background-color: #202A5D;
-  color: rgb(255, 255, 255);
-}
-
-/* Style the back side */
-.flip-card-back {
-  background-color: #B93838;
-  color: white;
-  transform: rotateY(180deg);
-  font-size: 12px;
-  padding: 8px;
-  overflow: scroll;
 }
