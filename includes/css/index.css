@@ -37,6 +37,7 @@
   display: flex;
   justify-content: center;
   align-content: center;
+  text-align: center;
   width: 50vw;
   height: 90vh;
   color: white;
@@ -68,6 +69,7 @@
   align-content: center;
   width: 50vw;
   color: white;
+  text-align: center;
   padding-left: 1em;
   padding-right: 1em;
   background-color: #B93838;
