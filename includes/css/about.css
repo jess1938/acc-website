@@ -3,16 +3,42 @@
 }
 
 .about-image {
-  margin: 12px;
+  margin: 1.1em;
+  position: relative;
   /* background-color: rgb(46, 44, 44); */
 }
 
+/* https://www.w3schools.com/howto/howto_css_image_overlay.asp */
+.about-image-info {
+  display: flex;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  font-size: 15px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  opacity: 0;
+  transition: .25s ease;
+  background-color: #202A5D;
+}
+
+.about-image:hover .about-image-info {
+  opacity: .88;
+}
+
 .holder {   
-  width: 212px;
-  height: 212px;
+  width: 9.5em;
+  height: 9.5em;
   border-radius: 50%;
   padding: .3em;
-  display: inline-block; 
+  /* position: absolute;  */
   overflow: hidden;
   background-color: #202A5D;
 }
@@ -21,6 +47,10 @@
   max-width:100%;
   border-radius: 50%;
 }
+
+/* .holder:hover {
+  display: none;
+} */
 
 h5 {
   text-align: center;
