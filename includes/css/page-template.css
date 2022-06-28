@@ -48,7 +48,7 @@ body {
   justify-content: center;
   background-color: #B93838;
   width: 100vw;
-  height: 5vh;
+  height: 4em;
   color: white;
   font-family: 'Amiko', sans-serif;
   font-size: 20px;
@@ -58,15 +58,17 @@ body {
 [class*=scroll-content-section] {
   display: flex;
   justify-content: center;
-  width: 100vw;
-  max-height: 75vh;
+  flex-wrap: wrap;
+  flex-direction: column;
+  /* width: 100vw; */
+  /* max-height: 75vh; */
   font-family: 'Source Sans Pro', sans-serif; 
   line-height: 2; 
   font-size: 24px; 
-  padding-left: 9vh; 
-  padding-right: 9vh;
-  padding-top: 12vh;
-  margin-bottom: 14vh;
+  /* padding-left: 9vh; 
+  padding-right: 9vh; */
+  /* padding-top: 12vh; */
+  /* margin-bottom: 14vh; */
   overflow: hidden;
 }
 
