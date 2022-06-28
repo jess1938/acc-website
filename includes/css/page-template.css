@@ -58,9 +58,10 @@ body {
 [class*=scroll-content-section] {
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
   flex-direction: column;
-  /* width: 100vw; */
+  width: 100vw;
   /* max-height: 75vh; */
   font-family: 'Source Sans Pro', sans-serif; 
   line-height: 2; 
@@ -69,6 +70,8 @@ body {
   padding-right: 9vh; */
   /* padding-top: 12vh; */
   /* margin-bottom: 14vh; */
+  margin-top: 1em;
+  margin-bottom: 1em;
   overflow: hidden;
 }
 
