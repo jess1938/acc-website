@@ -1,80 +1,52 @@
 @import url('https://fonts.googleapis.com/css2?family=Amiko&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap');
 
-.index-content {
+.index-slide-one, .index-slide-two, .index-slide-three {
+  display: flex;
+  justify-content: center; 
+  height: 90vh !important;
+}
+
+.index-slide-one {
+  position: relative;
+  background-color: #202A5D;
+}
+
+.index-slide-one:before {
+  /* https://www.digitalocean.com/community/tutorials/how-to-change-a-css-background-images-opacity */
+  content: ' ';
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-image: url('../images/index-group.webp');
+  background-size:cover;
+  background-repeat: no-repeat;
+  /* background-position: -15% 0 -15% ; */
+  opacity: .4;
+}
+
+.index-slide-one-content {
+  position: relative;
+  font-family: 'Amiko', sans-serif;
+  color: white;
+  text-align: center;
+  padding: 6em 0;
+  font-size: 60px;
+
+}
+
+.index-slide-two {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  /* https://medium.com/cloud-native-the-gathering/how-to-use-css-to-fade-in-and-fade-out-html-text-and-pictures-f45c11364f08 */
-  animation: fadeIn ease-in-out 1000ms;
-  /* -webkit-animation: fadeIn ease 1.5s;
-  -moz-animation: fadeIn ease 1.5s;
-  -o-animation: fadeIn ease 1.5s;
-  -ms-animation: fadeIn ease 1.5s; */
-}
-
-.index-slide-one, .index-slide-two, .index-slide-three {
-  display: flex !important;
-  flex-direction: row;
-  justify-content: center; 
-  width: 100vw;
-  height: 90vh;
-}
-
-.index-slide-one-left {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 50vw;
-  color: white;
-  background-color: #202A5D;
-  padding: 72px;
-  font-size: 32px;
-  font-family: 'Amiko', sans-serif;
-}
-
-.index-slide-one-right {
-  display: flex;
-  justify-content: center;
   align-content: center;
-  width: 50vw;
-  height: 90vh;
-  color: white;
-  padding: 1em;
-  background-color: #B93838;
   font-family: 'Source Sans Pro', sans-serif;
+  color: white;
+  padding: 3em;
   line-height: 2;
   font-size: 24px;
-  overflow: scroll;
-}
-
-.index-slide-two-left {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 50vw;
-  height: 90vh;
-  color: white;
-  background-color: #202A5D;
-  padding: 72px;
-  font-size: 32px;
-  font-family: 'Amiko', sans-serif;
-}
-
-.index-slide-two-right {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  align-content: center;
-  width: 50vw;
-  color: white;
-  padding-left: 1em;
-  padding-right: 1em;
-  background-color: #B93838;
-  font-family: 'Source Sans Pro', sans-serif;
-  line-height: 2;
-  font-size: 24px;
-  overflow: scroll;
 }
 
 .index-slide-three-left {
@@ -105,111 +77,4 @@
   line-height: 2;
   font-size: 24px;
   overflow: scroll;
-}
-
-/* The flip box container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
-.flip-box {
-  background-color: transparent;
-  width: 30vw;
-  height: 30vw;
-  border-radius: 50%;
-  perspective: 1000px;
-}
-
-/* This container is needed to position the front and back side */
-.flip-box-inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  transition: transform 0.8s;
-  transform-style: preserve-3d;
-}
-
-/* Do an horizontal flip when you move the mouse over the flip box container */
-.flip-box:hover .flip-box-inner {
-  transform: rotateY(180deg);
-}
-
-/* Position the front and back side */
-.flip-box-front, .flip-box-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  -webkit-backface-visibility: hidden; /* Safari */
-  backface-visibility: hidden;
-}
-
-/* Style the front side (fallback if image is missing) */
-.flip-box-front {
-  color: white;
-}
-
-/* Style the back side */
-.flip-box-back {
-  color: white;
-  display: flex;
-  align-content: center;
-  align-items: center;
-  text-align: center;
-  justify-content: center;
-  padding: 2vw;
-  font-size: 2vw;
-  line-height: 2;
-  transform: rotateY(180deg);
-}
-
-.index-footer {
-  display: flex;
-  align-content: center;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  flex-direction: column;
-  padding: 2em;
-}
-
-@keyframes fadeIn {
-  0% {
-    opacity:0;
-  }
-  100% {
-    opacity:1;
-  }
-}
-
-@-moz-keyframes fadeIn {
-  0% {
-    opacity:0;
-  }
-  100% {
-    opacity:1;
-  }
-}
-
-@-webkit-keyframes fadeIn {
-  0% {
-    opacity:0;
-  }
-  100% {
-    opacity:1;
-  }
-}
-
-@-o-keyframes fadeIn {
-  0% {
-    opacity:0;
-  }
-  100% {
-    opacity:1;
-  }
-}
-
-@-ms-keyframes fadeIn {
-  0% {
-    opacity:0;
-  }
-  100% {
-    opacity:1;
-    }
 }
