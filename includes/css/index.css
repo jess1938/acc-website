@@ -78,3 +78,17 @@
   font-size: 24px;
   overflow: scroll;
 }
+
+@keyframes slideInFromLeft {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+.index-content {  
+  animation: .8s ease-in 1 slideInFromLeft;
+}
+
