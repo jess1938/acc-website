@@ -79,7 +79,7 @@
   overflow: scroll;
 }
 
-@keyframes slideInFromLeft {
+@keyframes fadeIn {
   0% {
     opacity: 0%;
   }
@@ -89,6 +89,5 @@
 }
 
 .index-content {  
-  animation: .8s ease-in 1 slideInFromLeft;
+  animation: .8s ease-in 1 fadeIn;
 }
-
