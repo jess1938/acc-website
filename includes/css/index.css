@@ -21,7 +21,7 @@
   height: 100%;
   left: 0;
   top: 0;
-  background-image: url('../images/index-group.webp');
+  background-image: url('../images/index-group.jpg');
   background-size:cover;
   background-repeat: no-repeat;
   /* background-position: -15% 0 -15% ; */
@@ -77,4 +77,17 @@
   line-height: 2;
   font-size: 24px;
   overflow: scroll;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+.index-content {  
+  animation: .8s ease-in 1 fadeIn;
 }
