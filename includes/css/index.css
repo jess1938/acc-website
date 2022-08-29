@@ -91,3 +91,19 @@
 .index-content {  
   animation: .8s ease-in 1 fadeIn;
 }
+
+.index-footer {
+  margin: 4em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.index-footer-center {
+  /* background-color: #202A5D; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
